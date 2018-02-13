@@ -1,0 +1,38 @@
+<!DOCTYPE html><html><head>
+<title>Calculator</title><meta charset="utf-8">
+<script type="text/javascript">
+function cubo() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value * num.value;
+ }
+
+function square() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value;
+}
+
+function cubo() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value * num.value;
+}
+
+function invert() {
+  var num = document.getElementById("n1");
+  if (num.value != 0) {
+    num.value = 1 / num.value;	
+  }
+}
+
+</script>
+</head>
+<body>
+  Number:
+  <input type="text" id="n1"><p>
+
+  <button onclick="square()"> x<sup>2</sup> </button>
+  <button onclick="cubo()"> x<sup>3</sup> </button>
+  <button onclick="invert()"> 1/x</button>
+
+</body>
+</html>
+
